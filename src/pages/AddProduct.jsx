@@ -24,12 +24,6 @@ function AddProduct() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
-    // const formData = new FormData();
-    // formData.append("name", data.name);
-    // formData.append("brand", data.brand);
-    // formData.append("category", data.category);
-
     const formData = new FormData(e.target);
     const finalData = Object.fromEntries(formData.entries());
 
